@@ -78,6 +78,20 @@ Uses
 - A child can enhance itself with new methods and attributes
 - A child can override methods and attributes from the parent class
 
+```python
+# exaple of inheritance
+
+class ParentClassName:
+    def __init__(self,name):
+        self.name = name
+        # define character class
+
+class InheritanceClass(ParentClassName):
+	def __init__(self, param, param2):
+		ParentClassName.__init__(self, param)
+		self.param2 = param2
+```
+
 super()
 - Is a built in function that quickly access a parent class code
 
